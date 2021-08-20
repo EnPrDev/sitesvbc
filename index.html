@@ -6,77 +6,57 @@
         <!--la linea seguente serve ad usare il framework Bulma-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="utilities"href="bulma/sass/utilities/_all.sass"/>
+        <link rel="grid_columns" href="bulma/sass/grid/columns.sass"/>
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body class="has-navbar-fixed-top">
-        <header>
-            <script>
-                $(document).ready(function() {
+      <header>
+        <script>
+          $(document).ready(function() {
 
-                    // Check for click events on the navbar burger icon
-                    $(".navbar-burger").click(function() {
-                
-                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                        $(".navbar-burger").toggleClass("is-active");
-                        $(".navbar-menu").toggleClass("is-active");
-                
-                    });
-                });
-            </script>
+              // Check for click events on the navbar burger icon
+              $(".navbar-burger").click(function() {
+          
+                  // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                  $(".navbar-burger").toggleClass("is-active");
+                  $(".navbar-menu").toggleClass("is-active");
+          
+              });
+          });
+        </script>
             <!--Navbar-->
             <nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
                   <a class="navbar-item" href="index.html">
-                    <img src="logo-oriz.png" width="80" height="40">
+                    <img src="assets/logo-big.png" width="35" height="35">
                   </a>
               
-                  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                   </a>
                 </div>
               
-                <div id="navbarBasicExample" class="navbar-menu">
+                <div id="navbarMenu" class="navbar-menu">
                   <div class="navbar-start">
                     <a class="navbar-item" href="index.html">
                       HOME
                     </a>
               
-                    <a class="navbar-item" href="chi_siamo.html">
-                      CHI SIAMO
+                    <a class="navbar-item" href="candidati.html">
+                      I NOSTRI CANDIDATI
                     </a>
 
-                    <a class="navbar-item" href="notizie.html">
-                      NOTIZIE
+                    <a class="navbar-item" href="programma.html">
+                      IL PROGRAMMA
                     </a>
               
-                    <div class="navbar-item has-dropdown is-hoverable">
-                      <a class="navbar-link">
-                        ALTRO 
-                      </a>
-              
-                      <div class="navbar-dropdown">
-                        <a class="navbar-item" href="partecipa.html">
-                          PARTECIPA
-                        </a>
-                        <a class="navbar-item" href="trasparenza.html">
-                          TRASPARENZA
-                        </a>
-                        <a class="navbar-item" href="privacy.html".html"> 
-                          PRIVACY POLICY
-                        </a>
-                        <a class="navbar-item" href="dona.html">
-                          DONA
-                        </a>
-
-                        <hr class="navbar-divider">
-                        <a class="navbar-item" href=report.html>
-                          RIPORTA UN PROBLEMA
-                        </a>
-                      </div>
-                    </div>
+                    <a href="contatti.html" class="navbar-item">
+                      CONTATTI
+                    </a>
                   </div>
               
                   <div class="navbar-end">
@@ -94,10 +74,70 @@
                 </div>
             </nav>
         </header>
-        <div id="title">
-            <h1>San Vito Bene Comune</h1>
-
-        </div>
+        <section class="has-text-centered">
+          <div class="figure">
+            <img src="assets/logo-title.png" height="100" alt="San Vito Bene Comune">
+          </div>
+          <div class="box">
+            <figure class="image is-fullwidth">
+              <img src="ASSETS/main-banner.jpeg">
+            </figure>
+          </div>
+        </section>
+        <section class="info">
+          <div class="container is-fluid">
+            <div class="box">
+              <div class="tile is-ancestor ">
+                <div class="tile is-vertical is-8">
+                  <div class="tile">
+                    <div class="tile is-parent is-vertical">
+                      <article class="tile is-child notification is-primary">
+                        <p class="title">Vertical...</p>
+                        <p class="subtitle">Top tile</p>
+                      </article>
+                      <article class="tile is-child notification is-warning">
+                        <p class="title">...tiles</p>
+                        <p class="subtitle">Bottom tile</p>
+                      </article>
+                    </div>
+                    <div class="tile is-parent">
+                      <article class="tile is-child notification is-info">
+                        <p class="title">Titolino</p>
+                        <p class="subtitle">sottotitolino</p>
+                        <figure class="image is-4by3">
+                          <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/San_Vito_al_Tagliamento_-_Piazza_del_Popolo.JPG">
+                        </figure>
+                      </article>
+                    </div>
+                  </div>
+                  <div class="tile is-parent">
+                    <article class="tile is-child notification is-danger">
+                      <p class="title">Wide tile</p>
+                      <p class="subtitle">Aligned with the right tile</p>
+                      <div class="content">
+                        <!-- Content -->
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child notification is-success">
+                    <div class="content">
+                      <p class="title">Tall tile</p>
+                      <p class="subtitle">With even more content</p>
+                      <div class="content">
+                        <!-- Content -->
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae voluptates numquam ducimus, quae obcaecati ab non animi natus velit reiciendis magnam corporis odit amet maxime, iure excepturi eligendi sed voluptatibus.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore est, dolores neque unde magni quaerat debitis iure aspernatur tempora quisquam eos eveniet, consequuntur fuga accusamus a, recusandae sed architecto repudiandae!
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus eos sed dolores odio assumenda, explicabo cupiditate maiores ipsa nam ullam magnam sequi maxime at quisquam, dolorem, veritatis soluta dignissimos obcaecati?
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
     </body>
 
 </html>
