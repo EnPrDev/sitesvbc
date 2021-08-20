@@ -114,12 +114,20 @@
                           </div>
                     </div>
                     <div class="column">
-                        <button class="button is-medium has-text-centered">
+                    <script>function copyToClipboard(element) {
+                        var $temp = $("<input>");
+                        $("body").append($temp);
+                        $temp.val($(element).text()).select();
+                        document.execCommand("copy");
+                        $temp.remove();
+                    }</script>
+                        <button class="button is-medium has-text-centered" onclick="copyToClipboard('#mail-contact')">
                             <span class="icon is-small">
                                 <i class="fas fa-envelope"></i>
                             </span>
-                            <span>sanvitobenecomune@gmail.com </span>
+                            <span id="mail-contact">sanvitobenecomune@gmail.com </span>
                           </button>
+                          <p>clicca l'indirizzo per copiarlo</p>
                     </div>
                   </div>
                   <h1 class="subtitle">Ti aspettiamo! &#128522</h1>
