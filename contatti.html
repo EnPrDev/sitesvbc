@@ -118,20 +118,26 @@
                           </div>
                     </div>
                     <div class="column">
-                    <script>function copyToClipboard(element) {
-                        var $temp = $("<input>");
-                        $("body").append($temp);
-                        $temp.val($(element).text()).select();
-                        document.execCommand("copy");
-                        $temp.remove();
-                    }</script>
-                        <button class="button is-medium has-text-centered" onclick="copyToClipboard('#mail-contact')">
-                            <span class="icon is-small">
-                                <i class="fas fa-envelope"></i>
-                            </span>
-                            <span id="mail-contact">sanvitobenecomune@gmail.com </span>
-                          </button>
-                          <p>clicca l'indirizzo per copiarlo</p>
+                      <script>function copyToClipboard(element) {
+                          var $temp = $("<input>");
+                          $("body").append($temp);
+                          $temp.val($(element).text()).select();
+                          document.execCommand("copy");
+                          $temp.remove();
+                      }</script>
+                      <button class="button is-medium has-text-centered" onclick="copyToClipboard('#mail-contact')">
+                          <span class="icon is-small">
+                              <i class="fas fa-envelope"></i>
+                          </span>
+                          <span id="mail-contact">sanvitobenecomune@gmail.com </span>
+                        </button>
+                        <p>clicca l'indirizzo per copiarlo</p>
+                        <form class=field action="mailto:someone@example.com" method="post" enctype="text/plain">
+                          Comment:<br>
+                          <input type="text" name="comment" size="50"><br><br>
+                          <input type="submit" value="Send">
+                          <input type="reset" value="Reset">
+                        </form>
                     </div>
                   </div>
                   <h1 class="subtitle">Ti aspettiamo! &#128522</h1>
