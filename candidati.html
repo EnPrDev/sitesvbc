@@ -11,6 +11,23 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!--FontAwesome5-->
         <script src="https://kit.fontawesome.com/5d2011fd87.js" crossorigin="anonymous"></script>
+        <script>
+            function opM(m) {
+                var modal = document.getElementById(m);
+                var rootEl= document.documentElement;
+                modal.classList.add('is-active');
+                rootEl.classList.add('is-clipped');
+            }
+
+            function clM(m) {
+                var modal = document.getElementById(m);
+                var rootEl = document.documentElement;
+                modal.classList.remove('is-active');
+                rootEl.classList.remove('is-clipped');
+            }
+        </script> 
+
+        
     </head>
     <body class="has-navbar-fixed-top">
       <header>
@@ -84,11 +101,52 @@
               <img src="assets/candidati-title.png" height="100" alt="I nostri candidati">
             </div>
         </section>
+        
         <section class="candidati">
             <div class="container is-fluid">
                 <div class="columns">
-                    <div class="column">
-                        <div class="card">
+                    <div class="column is-one-quarter">
+                        <div class="card" style="height: 100%;">
+                            <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="assets/candidati/clnitti.jpeg" alt="clNitti-placeholder">
+                            </figure>
+                            </div>
+                            <div class="card-content">                
+                            <div class="content">
+                                <h4 class="title" style="margin-bottom: 5px;">Pegorer Valaentina</h1>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <a class="button modal-button is-warning is-small is-outlined" onclick="opM('modalCLN')">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-address-card"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <div class="modal" id="modalCLN">
+                                        <div class="modal-background"></div>
+                                        <div class="modal-card">
+                                            <header class="modal-card-head">
+                                                <p class="modal-card-title">Cognome Nome</p>
+                                                <button class="delete" aria-label="close" onclick="clM('modalCLN')"></button>
+                                            </header>
+                                            <section class="modal-card-body">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, consequuntur. Molestias blanditiis labore distinctio! Soluta consectetur voluptates, reiciendis architecto sunt tempora vel adipisci optio quia, quos pariatur, impedit necessitatibus quod.
+                                            </section>
+                                            <footer class="modal-card-foot">
+                                                <!--other content-->
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>                                                         
+                                                            
+                                37 anni, avvocato, consigliere comunale.                          
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-quarter" >
+                        <div class="card" style="height: 100%;" >
                             <div class="card-image">
                             <figure class="image is-4by3">
                                 <img src="assets/candidati/clnitti.jpeg" alt="clNitti-placeholder">
@@ -120,471 +178,657 @@
                                             </span>
                                         </a>
                                     </p>
+                                    <p class="control">
+                                        <a class="button modal-button is-warning is-small is-outlined" onclick="opM('modalCLN')">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-address-card"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <div class="modal" id="modalCLN">
+                                        <div class="modal-background"></div>
+                                        <div class="modal-card">
+                                            <header class="modal-card-head">
+                                                <p class="modal-card-title">Cognome Nome</p>
+                                                <button class="delete" aria-label="close" onclick="clM('modalCLN')"></button>
+                                            </header>
+                                            <section class="modal-card-body">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, consequuntur. Molestias blanditiis labore distinctio! Soluta consectetur voluptates, reiciendis architecto sunt tempora vel adipisci optio quia, quos pariatur, impedit necessitatibus quod.
+                                            </section>
+                                            <footer class="modal-card-foot">
+                                                <!--other content-->
+                                            </footer>
+                                        </div>
+                                    </div>
                                 </div>                                                         
                                                             
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a href="https://www.instagram.com/sanvito_ingrande/">@sanvitoingrande</a>.
-                                <a href="#">#picoftheday</a> <a href="#">#like4like</a>                             
+                                21 anni, studente universitario di Politics, Philosophy,Economics. 
+                                <i>"Ri-Generiamo per una San Vito 4.0"</i>                        
                             </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="card">
+                    <div class="column is-one-quarter">
+                        <div class="card" style="height: 100%;">
                             <div class="card-image">
                             <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                <img src="assets/candidati/clnitti.jpeg" alt="clNitti-placeholder">
                             </figure>
                             </div>
-                            <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                </figure>
-                                </div>
-                                <div class="media-content">
-                                <p class="title is-4">John Smith</p>
-                                <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-                        
+                            <div class="card-content">                
                             <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                <h4 class="title" style="margin-bottom: 5px;">De Mattio Emilio</h1>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <a class="button modal-button is-warning is-small is-outlined" onclick="opM('modalCLN')">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-address-card"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <div class="modal" id="modalCLN">
+                                        <div class="modal-background"></div>
+                                        <div class="modal-card">
+                                            <header class="modal-card-head">
+                                                <p class="modal-card-title">Cognome Nome</p>
+                                                <button class="delete" aria-label="close" onclick="clM('modalCLN')"></button>
+                                            </header>
+                                            <section class="modal-card-body">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, consequuntur. Molestias blanditiis labore distinctio! Soluta consectetur voluptates, reiciendis architecto sunt tempora vel adipisci optio quia, quos pariatur, impedit necessitatibus quod.
+                                            </section>
+                                            <footer class="modal-card-foot">
+                                                <!--other content-->
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                                             
+                                                            
+                                Nato nel 1960. Sposato e padre di due figli. Coordinatore di Radiologia presso l'Azienda Sanitaria Locale.
+                                Già Consigliere con Delega allo Sport e assessore ai Lavori Pubblici uscente.                          
                             </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="card">
+                    <div class="column is-one-quarter">
+                        <div class="card" style="height: 100%;">
                             <div class="card-image">
                             <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                <img src="assets/candidati/clnitti.jpeg" alt="clNitti-placeholder">
                             </figure>
                             </div>
-                            <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                </figure>
-                                </div>
-                                <div class="media-content">
-                                <p class="title is-4">John Smith</p>
-                                <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-                        
+                            <div class="card-content">                
                             <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                            </figure>
-                            </div>
-                            <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                </figure>
-                                </div>
-                                <div class="media-content">
-                                <p class="title is-4">John Smith</p>
-                                <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-                        
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                <h4 class="title" style="margin-bottom: 5px;">Piazza Donatelle</h1>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <a class="button modal-button is-warning is-small is-outlined" onclick="opM('modalCLN')">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-address-card"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <div class="modal" id="modalCLN">
+                                        <div class="modal-background"></div>
+                                        <div class="modal-card">
+                                            <header class="modal-card-head">
+                                                <p class="modal-card-title">Cognome Nome</p>
+                                                <button class="delete" aria-label="close" onclick="clM('modalCLN')"></button>
+                                            </header>
+                                            <section class="modal-card-body">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, consequuntur. Molestias blanditiis labore distinctio! Soluta consectetur voluptates, reiciendis architecto sunt tempora vel adipisci optio quia, quos pariatur, impedit necessitatibus quod.
+                                            </section>
+                                            <footer class="modal-card-foot">
+                                                <!--other content-->
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>                                                         
+                                                            
+                                Sposata e madre di due figli. Coordinatrice infermieristica in  pensione, 
+                                da sempre attiva nel volontariato, attenta e sensibile alle tematiche socio sanitarie.                          
                             </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="columns">
-                    <div class="column">
-                        <div class="card">
+                    <div class="column is-one-quarter">
+                        <div class="card" style="height: 100%;">
                             <div class="card-image">
                             <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                <img src="assets/candidati/clnitti.jpeg" alt="clNitti-placeholder">
                             </figure>
                             </div>
-                            <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                </figure>
-                                </div>
-                                <div class="media-content">
-                                <p class="title is-4">John Smith</p>
-                                <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-                        
+                            <div class="card-content">                
                             <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                <h4 class="title" style="margin-bottom: 5px;">Flamia Monica</h1>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <a class="button modal-button is-warning is-small is-outlined" onclick="opM('modalCLN')">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-address-card"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <div class="modal" id="modalCLN">
+                                        <div class="modal-background"></div>
+                                        <div class="modal-card">
+                                            <header class="modal-card-head">
+                                                <p class="modal-card-title">Cognome Nome</p>
+                                                <button class="delete" aria-label="close" onclick="clM('modalCLN')"></button>
+                                            </header>
+                                            <section class="modal-card-body">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, consequuntur. Molestias blanditiis labore distinctio! Soluta consectetur voluptates, reiciendis architecto sunt tempora vel adipisci optio quia, quos pariatur, impedit necessitatibus quod.
+                                            </section>
+                                            <footer class="modal-card-foot">
+                                                <!--other content-->
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>                                                         
+                                                            
+                                Sposata e madre di due figli. Medico Chirurgo in pensione. Componente della Commissione Pari Opportunità
+                                e del Cda della Fondazione Falcon Vial.                          
                             </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="card">
+                    <div class="column is-one-quarter">
+                        <div class="card" style="height: 100%;">
                             <div class="card-image">
                             <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                <img src="assets/candidati/clnitti.jpeg" alt="clNitti-placeholder">
                             </figure>
                             </div>
-                            <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                </figure>
-                                </div>
-                                <div class="media-content">
-                                <p class="title is-4">John Smith</p>
-                                <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-                        
+                            <div class="card-content">                
                             <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                <h4 class="title" style="margin-bottom: 5px;">Mainardis Francesco</h1>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <a class="button modal-button is-warning is-small is-outlined" onclick="opM('modalCLN')">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-address-card"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <div class="modal" id="modalCLN">
+                                        <div class="modal-background"></div>
+                                        <div class="modal-card">
+                                            <header class="modal-card-head">
+                                                <p class="modal-card-title">Cognome Nome</p>
+                                                <button class="delete" aria-label="close" onclick="clM('modalCLN')"></button>
+                                            </header>
+                                            <section class="modal-card-body">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, consequuntur. Molestias blanditiis labore distinctio! Soluta consectetur voluptates, reiciendis architecto sunt tempora vel adipisci optio quia, quos pariatur, impedit necessitatibus quod.
+                                            </section>
+                                            <footer class="modal-card-foot">
+                                                <!--other content-->
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>                                                         
+                                                            
+                                23 anni, studente universitario di Turismo e Management.                         
                             </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="card">
+                    <div class="column is-one-quarter">
+                        <div class="card" style="height: 100%;">
                             <div class="card-image">
                             <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                <img src="assets/candidati/clnitti.jpeg" alt="clNitti-placeholder">
                             </figure>
                             </div>
-                            <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                </figure>
-                                </div>
-                                <div class="media-content">
-                                <p class="title is-4">John Smith</p>
-                                <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-                        
+                            <div class="card-content">                
                             <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                <h4 class="title" style="margin-bottom: 5px;">Simon Emma</h1>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <a class="button modal-button is-warning is-small is-outlined" onclick="opM('modalCLN')">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-address-card"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <div class="modal" id="modalCLN">
+                                        <div class="modal-background"></div>
+                                        <div class="modal-card">
+                                            <header class="modal-card-head">
+                                                <p class="modal-card-title">Cognome Nome</p>
+                                                <button class="delete" aria-label="close" onclick="clM('modalCLN')"></button>
+                                            </header>
+                                            <section class="modal-card-body">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, consequuntur. Molestias blanditiis labore distinctio! Soluta consectetur voluptates, reiciendis architecto sunt tempora vel adipisci optio quia, quos pariatur, impedit necessitatibus quod.
+                                            </section>
+                                            <footer class="modal-card-foot">
+                                                <!--other content-->
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>                                                         
+                                                            
+                                Diplomata al liceo scientifico <i>"Le Filandiere"</i>. Studentessa di ostetricia a Ferrara.                          
                             </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="card">
+                    <div class="column is-one-quarter">
+                        <div class="card" style="height: 100%;">
                             <div class="card-image">
                             <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                <img src="assets/candidati/roberto valerio.jpg" alt="rv-placeholder">
                             </figure>
                             </div>
-                            <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                </figure>
-                                </div>
-                                <div class="media-content">
-                                <p class="title is-4">John Smith</p>
-                                <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-                        
+                            <div class="card-content">                
                             <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="columns">
-                    <div class="column">
-                        <div class="card">
-                            <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                            </figure>
-                            </div>
-                            <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                </figure>
-                                </div>
-                                <div class="media-content">
-                                <p class="title is-4">John Smith</p>
-                                <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-                        
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                            </figure>
-                            </div>
-                            <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                </figure>
-                                </div>
-                                <div class="media-content">
-                                <p class="title is-4">John Smith</p>
-                                <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-                        
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                            </figure>
-                            </div>
-                            <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                </figure>
-                                </div>
-                                <div class="media-content">
-                                <p class="title is-4">John Smith</p>
-                                <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-                        
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="card">
-                            <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                            </figure>
-                            </div>
-                            <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                </figure>
-                                </div>
-                                <div class="media-content">
-                                <p class="title is-4">John Smith</p>
-                                <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-                        
-                            <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                <h4 class="title" style="margin-bottom: 5px;">Valerio Roberto</h1>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <a class="button modal-button is-warning is-small is-outlined" onclick="opM('modalRV')">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-address-card"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <div class="modal" id="modalRV">
+                                        <div class="modal-background"></div>
+                                        <div class="modal-card">
+                                            <header class="modal-card-head">
+                                                <p class="modal-card-title">Valerio Roberto</p>
+                                                <button class="delete" aria-label="close" onclick="clM('modalRV')"></button>
+                                            </header>
+                                            <section class="modal-card-body" style="overflow: scroll;" >
+                                                <div class="content" style="height: 1000px; overflow: hidden;">
+                                                    <object data="assets/candidati/cv/CV_Roberto Valerio.pdf" type="application/pdf"  style="width: 100%; height:100%; overflow: hidden;">
+                                                        <p>Alternative text - include a link <a href="assets/candidati/cv/CV_Roberto Valerio.pdf">to the PDF!</a></p>
+                                                    </object>
+                                                </div>
+                                            </section>
+                                            <footer class="modal-card-foot">
+                                                <!--other content-->
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>                                                         
+                                                            
+                                Nato nel 1965. Sposato, attivo nel sociale e donatore di sangue. <i>"Correttezza, lealtà e sacrificio. Costruire il futuro conoscendo il passato."</i>                         
                             </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="columns">
-                    <div class="column">
-                        <div class="card">
+                    <div class="column is-one-quarter">
+                        <div class="card" style="height: 100%;">
                             <div class="card-image">
                             <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                <img src="assets/candidati/clnitti.jpeg" alt="clNitti-placeholder">
                             </figure>
                             </div>
-                            <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                </figure>
-                                </div>
-                                <div class="media-content">
-                                <p class="title is-4">John Smith</p>
-                                <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-                        
+                            <div class="card-content">                
                             <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                <h4 class="title" style="margin-bottom: 5px;">Cavallini Emilia</h1>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <a class="button modal-button is-warning is-small is-outlined" onclick="opM('modalCLN')">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-address-card"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <div class="modal" id="modalCLN">
+                                        <div class="modal-background"></div>
+                                        <div class="modal-card">
+                                            <header class="modal-card-head">
+                                                <p class="modal-card-title">Cognome Nome</p>
+                                                <button class="delete" aria-label="close" onclick="clM('modalCLN')"></button>
+                                            </header>
+                                            <section class="modal-card-body">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, consequuntur. Molestias blanditiis labore distinctio! Soluta consectetur voluptates, reiciendis architecto sunt tempora vel adipisci optio quia, quos pariatur, impedit necessitatibus quod.
+                                            </section>
+                                            <footer class="modal-card-foot">
+                                                <!--other content-->
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>                                                         
+                                                            
+                                23 anni, Laureata in Economics and Finance e Studentessa del Master in Finance and Accounting.                          
                             </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="card">
+                    <div class="column is-one-quarter">
+                        <div class="card" style="height: 100%;">
                             <div class="card-image">
                             <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                <img src="assets/candidati/clnitti.jpeg" alt="clNitti-placeholder">
                             </figure>
                             </div>
-                            <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                </figure>
-                                </div>
-                                <div class="media-content">
-                                <p class="title is-4">John Smith</p>
-                                <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-                        
+                            <div class="card-content">                
                             <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                <h4 class="title" style="margin-bottom: 5px;">Bottos David</h1>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <a class="button modal-button is-warning is-small is-outlined" onclick="opM('modalCLN')">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-address-card"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <div class="modal" id="modalCLN">
+                                        <div class="modal-background"></div>
+                                        <div class="modal-card">
+                                            <header class="modal-card-head">
+                                                <p class="modal-card-title">Cognome Nome</p>
+                                                <button class="delete" aria-label="close" onclick="clM('modalCLN')"></button>
+                                            </header>
+                                            <section class="modal-card-body">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, consequuntur. Molestias blanditiis labore distinctio! Soluta consectetur voluptates, reiciendis architecto sunt tempora vel adipisci optio quia, quos pariatur, impedit necessitatibus quod.
+                                            </section>
+                                            <footer class="modal-card-foot">
+                                                <!--other content-->
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>                                                         
+                                                            
+                                Architetto, specializzato in Sostenibilità Ambientale.                         
                             </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="card">
+                    <div class="column is-one-quarter">
+                        <div class="card" style="height: 100%;">
                             <div class="card-image">
                             <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                <img src="assets/candidati/clnitti.jpeg" alt="clNitti-placeholder">
                             </figure>
                             </div>
-                            <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                </figure>
-                                </div>
-                                <div class="media-content">
-                                <p class="title is-4">John Smith</p>
-                                <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-                        
+                            <div class="card-content">                
                             <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                <h4 class="title" style="margin-bottom: 5px;">Sabino Elisabetta</h1>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <a class="button modal-button is-warning is-small is-outlined" onclick="opM('modalCLN')">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-address-card"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <div class="modal" id="modalCLN">
+                                        <div class="modal-background"></div>
+                                        <div class="modal-card">
+                                            <header class="modal-card-head">
+                                                <p class="modal-card-title">Cognome Nome</p>
+                                                <button class="delete" aria-label="close" onclick="clM('modalCLN')"></button>
+                                            </header>
+                                            <section class="modal-card-body">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, consequuntur. Molestias blanditiis labore distinctio! Soluta consectetur voluptates, reiciendis architecto sunt tempora vel adipisci optio quia, quos pariatur, impedit necessitatibus quod.
+                                            </section>
+                                            <footer class="modal-card-foot">
+                                                <!--other content-->
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>                                                         
+                                                            
+                                <i>"Semplicità non è semplicismo, ma essenzialità"</i> - Steve Jobs.                       
                             </div>
                             </div>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="card">
+                    <div class="column is-one-quarter">
+                        <div class="card" style="height: 100%;">
                             <div class="card-image">
                             <figure class="image is-4by3">
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                                <img src="assets/candidati/clnitti.jpeg" alt="clNitti-placeholder">
                             </figure>
                             </div>
-                            <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
-                                </figure>
-                                </div>
-                                <div class="media-content">
-                                <p class="title is-4">John Smith</p>
-                                <p class="subtitle is-6">@johnsmith</p>
-                                </div>
-                            </div>
-                        
+                            <div class="card-content">                
                             <div class="content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                <a href="#">#css</a> <a href="#">#responsive</a>
-                                <br>
-                                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                <h4 class="title" style="margin-bottom: 5px;">Zizaj Xhinaldo</h1>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <a class="button modal-button is-warning is-small is-outlined" onclick="opM('modalCLN')">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-address-card"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <div class="modal" id="modalCLN">
+                                        <div class="modal-background"></div>
+                                        <div class="modal-card">
+                                            <header class="modal-card-head">
+                                                <p class="modal-card-title">Cognome Nome</p>
+                                                <button class="delete" aria-label="close" onclick="clM('modalCLN')"></button>
+                                            </header>
+                                            <section class="modal-card-body">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, consequuntur. Molestias blanditiis labore distinctio! Soluta consectetur voluptates, reiciendis architecto sunt tempora vel adipisci optio quia, quos pariatur, impedit necessitatibus quod.
+                                            </section>
+                                            <footer class="modal-card-foot">
+                                                <!--other content-->
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>                                                         
+                                                            
+                                Nato nel 1992, da 19 anni in Italia, Operaio. Interessato da sempre nelle problematiche legate a Lavoro e Ambiente.                         
                             </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-one-quarter">
+                        <div class="card" style="height: 100%;">
+                            <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="assets/candidati/clnitti.jpeg" alt="clNitti-placeholder">
+                            </figure>
+                            </div>
+                            <div class="card-content">                
+                            <div class="content">
+                                <h4 class="title" style="margin-bottom: 5px;">Tancau Mihaela</h1>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <a class="button modal-button is-warning is-small is-outlined" onclick="opM('modalCLN')">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-address-card"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <div class="modal" id="modalCLN">
+                                        <div class="modal-background"></div>
+                                        <div class="modal-card">
+                                            <header class="modal-card-head">
+                                                <p class="modal-card-title">Cognome Nome</p>
+                                                <button class="delete" aria-label="close" onclick="clM('modalCLN')"></button>
+                                            </header>
+                                            <section class="modal-card-body">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, consequuntur. Molestias blanditiis labore distinctio! Soluta consectetur voluptates, reiciendis architecto sunt tempora vel adipisci optio quia, quos pariatur, impedit necessitatibus quod.
+                                            </section>
+                                            <footer class="modal-card-foot">
+                                                <!--other content-->
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>                                                         
+                                                            
+                                Mamma di tre figli, infermiera.                          
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-quarter">
+                        <div class="card" style="height: 100%;">
+                            <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="assets/candidati/clnitti.jpeg" alt="clNitti-placeholder">
+                            </figure>
+                            </div>
+                            <div class="card-content">                
+                            <div class="content">
+                                <h4 class="title" style="margin-bottom: 5px;">Duchi Lorenzo</h1>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <a class="button modal-button is-warning is-small is-outlined" onclick="opM('modalCLN')">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-address-card"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <div class="modal" id="modalCLN">
+                                        <div class="modal-background"></div>
+                                        <div class="modal-card">
+                                            <header class="modal-card-head">
+                                                <p class="modal-card-title">Cognome Nome</p>
+                                                <button class="delete" aria-label="close" onclick="clM('modalCLN')"></button>
+                                            </header>
+                                            <section class="modal-card-body">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, consequuntur. Molestias blanditiis labore distinctio! Soluta consectetur voluptates, reiciendis architecto sunt tempora vel adipisci optio quia, quos pariatur, impedit necessitatibus quod.
+                                            </section>
+                                            <footer class="modal-card-foot">
+                                                <!--other content-->
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>                                                         
+                                                            
+                                Commerciante, padre di due figli. Laureato in Filosofia con master in Gestione della Comunicazione.                         
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-quarter">
+                        <div class="card" style="height: 100%;">
+                            <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="assets/candidati/clnitti.jpeg" alt="clNitti-placeholder">
+                            </figure>
+                            </div>
+                            <div class="card-content">                
+                            <div class="content">
+                                <h4 class="title" style="margin-bottom: 5px;">Arciero Eugenia</h1>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <a class="button modal-button is-warning is-small is-outlined" onclick="opM('modalCLN')">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-address-card"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <div class="modal" id="modalCLN">
+                                        <div class="modal-background"></div>
+                                        <div class="modal-card">
+                                            <header class="modal-card-head">
+                                                <p class="modal-card-title">Cognome Nome</p>
+                                                <button class="delete" aria-label="close" onclick="clM('modalCLN')"></button>
+                                            </header>
+                                            <section class="modal-card-body">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, consequuntur. Molestias blanditiis labore distinctio! Soluta consectetur voluptates, reiciendis architecto sunt tempora vel adipisci optio quia, quos pariatur, impedit necessitatibus quod.
+                                            </section>
+                                            <footer class="modal-card-foot">
+                                                <!--other content-->
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>                                                         
+                                                            
+                                Diplomata al Liceo Classico a Pordenone, Studentessa di Giurisprudenza a Bologna.                         
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-quarter">
+                        <div class="card" style="height: 100%;">
+                            <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="assets/candidati/clnitti.jpeg" alt="clNitti-placeholder">
+                            </figure>
+                            </div>
+                            <div class="card-content">                
+                            <div class="content">
+                                <h4 class="title" style="margin-bottom: 5px;">Zara Susi</h1>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <a class="button modal-button is-warning is-small is-outlined" onclick="opM('modalCLN')">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-address-card"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <div class="modal" id="modalCLN">
+                                        <div class="modal-background"></div>
+                                        <div class="modal-card">
+                                            <header class="modal-card-head">
+                                                <p class="modal-card-title">Cognome Nome</p>
+                                                <button class="delete" aria-label="close" onclick="clM('modalCLN')"></button>
+                                            </header>
+                                            <section class="modal-card-body">
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, consequuntur. Molestias blanditiis labore distinctio! Soluta consectetur voluptates, reiciendis architecto sunt tempora vel adipisci optio quia, quos pariatur, impedit necessitatibus quod.
+                                            </section>
+                                            <footer class="modal-card-foot">
+                                                <!--other content-->
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>                                                         
+                                                            
+                                Nata nel 1962 a San Vito al Tagliamento, madre di tre figli, bancaria. <i>"Mi metto in gioco per impegnare le mie energie per la nostra comunità."</i>                         
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-centered">
+                   <div class="column is-one-quarter">
+                        <div class="card" style="height: 100%;">
+                            <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="assets/candidati/clnitti.jpeg" alt="clNitti-placeholder">
+                            </figure>
+                            </div>
+                            <div class="card-content">                
+                            <div class="content">
+                                <h4 class="title" style="margin-bottom: 5px;">Tramontin Lucia</h1>
+                                <div class="field is-grouped">
+                                    <p class="control">
+                                        <a class="button modal-button is-warning is-small is-outlined" onclick="opM('modalLT')">
+                                            <span class="icon is-small">
+                                                <i class="fas fa-address-card"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <div class="modal" id="modalLT">
+                                        <div class="modal-background"></div>
+                                        <div class="modal-card">
+                                            <header class="modal-card-head">
+                                                <p class="modal-card-title">Tramontin Lucia</p>
+                                                <button class="delete" aria-label="close" onclick="clM('modalLT')"></button>
+                                            </header>
+                                            <section class="modal-card-body" style="overflow: hidden;" >
+                                                <div class="content" style="height: 1500px; overflow-y: scroll; ">
+                                                    <object data="assets/candidati/cv/CV_LuciaT.pdf" type="application/pdf"  style="width: 100%; height:100%;">
+                                                        <p>Alternative text - include a link <a href="assets/candidati/cv/CV_LuciaT.pdf">to the PDF!</a></p>
+                                                    </object>
+                                                </div>
+                                            </section>
+                                            <footer class="modal-card-foot">
+                                                <!--other content-->
+                                            </footer>
+                                        </div>
+                                    </div>
+                                </div>                                                         
+                                                            
+                                Sposata e mamma di due figlie. Dipendente di un agenzia regionale.                         
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
